@@ -35,4 +35,5 @@ enum APIConstants {
   static let grantType = "client_credentials"
   static let clientId = "YourKeyHere"
   static let clientSecret = "YourSecretHere"
+  static let testKey = ""
 }
