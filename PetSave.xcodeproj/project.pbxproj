@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,9 @@
 		18D775C722AD944400AE281E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C622AD944400AE281E /* Assets.xcassets */; };
 		18D775CA22AD944400AE281E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C922AD944400AE281E /* Preview Assets.xcassets */; };
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
+		24D1721C29F71384007BD68D /* AnimalsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D1721B29F71384007BD68D /* AnimalsMock.swift */; };
+		24D1721F29F71E58007BD68D /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D1721E29F71E58007BD68D /* RequestProtocol.swift */; };
+		24D1722129F7205D007BD68D /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D1722029F7205D007BD68D /* RequestType.swift */; };
 		845137A62796247E00A4DA57 /* SuggestionsGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845137A32796247E00A4DA57 /* SuggestionsGrid.swift */; };
 		845137A72796247E00A4DA57 /* AnimalTypeSuggestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845137A42796247E00A4DA57 /* AnimalTypeSuggestionView.swift */; };
 		845137A82796247E00A4DA57 /* EmptyResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845137A52796247E00A4DA57 /* EmptyResultsView.swift */; };
@@ -77,6 +80,9 @@
 		18D775C922AD944400AE281E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24D1721B29F71384007BD68D /* AnimalsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsMock.swift; sourceTree = "<group>"; };
+		24D1721E29F71E58007BD68D /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		24D1722029F7205D007BD68D /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
 		845137A32796247E00A4DA57 /* SuggestionsGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsGrid.swift; sourceTree = "<group>"; };
 		845137A42796247E00A4DA57 /* AnimalTypeSuggestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalTypeSuggestionView.swift; sourceTree = "<group>"; };
 		845137A52796247E00A4DA57 /* EmptyResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyResultsView.swift; sourceTree = "<group>"; };
@@ -190,6 +196,15 @@
 				849C44EE26A26F70009899B0 /* AnimalsMock.json */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		24D1721D29F71E17007BD68D /* request */ = {
+			isa = PBXGroup;
+			children = (
+				24D1721E29F71E58007BD68D /* RequestProtocol.swift */,
+				24D1722029F7205D007BD68D /* RequestType.swift */,
+			);
+			path = request;
 			sourceTree = "<group>";
 		};
 		847F4A0126D7549300B94FB8 /* Core */ = {
@@ -339,6 +354,7 @@
 		AE6A377B269B56460054C842 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				24D1721D29F71E17007BD68D /* request */,
 				847F49F526D3403B00B94FB8 /* APIConstants.swift */,
 			);
 			path = api;
@@ -378,6 +394,7 @@
 				84A59F7B269E92F800237A83 /* APIColors.swift */,
 				84A59F7D269E9BDA00237A83 /* AdoptionStatus.swift */,
 				8FDD2CA226B311AC00DBE33F /* Pagination.swift */,
+				24D1721B29F71384007BD68D /* AnimalsMock.swift */,
 			);
 			path = animal;
 			sourceTree = "<group>";
@@ -479,8 +496,9 @@
 		18D775B522AD944300AE281E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Ray Wenderlich";
 				TargetAttributes = {
 					18D775BC22AD944300AE281E = {
@@ -577,6 +595,7 @@
 			files = (
 				AE6A381C269B5DF20054C842 /* Size.swift in Sources */,
 				AE6A3782269B57940054C842 /* SearchView.swift in Sources */,
+				24D1722129F7205D007BD68D /* RequestType.swift in Sources */,
 				845137A72796247E00A4DA57 /* AnimalTypeSuggestionView.swift in Sources */,
 				847F49F626D3403B00B94FB8 /* APIConstants.swift in Sources */,
 				84A59F78269E906400237A83 /* AnimalAttributes.swift in Sources */,
@@ -603,10 +622,12 @@
 				845137A82796247E00A4DA57 /* EmptyResultsView.swift in Sources */,
 				8472DFCC26BF93B3000FEDAF /* AnimalsNearYouView.swift in Sources */,
 				84A59F7C269E92F800237A83 /* APIColors.swift in Sources */,
+				24D1721C29F71384007BD68D /* AnimalsMock.swift in Sources */,
 				AE6A380E269B5DA90054C842 /* Breed.swift in Sources */,
 				84A59F76269E8DF000237A83 /* VideoLink.swift in Sources */,
 				84B0507426B0E45000E0A709 /* AnimalLocationView.swift in Sources */,
 				845137A62796247E00A4DA57 /* SuggestionsGrid.swift in Sources */,
+				24D1721F29F71E58007BD68D /* RequestProtocol.swift in Sources */,
 				AE6A3814269B5DC20054C842 /* Details.swift in Sources */,
 				84B0507026B0E2EB00E0A709 /* AnimalDetailRow.swift in Sources */,
 				8485B72726A4A3AB001874CB /* AnimalSearchType.swift in Sources */,
