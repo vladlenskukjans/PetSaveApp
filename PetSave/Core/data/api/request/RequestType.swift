@@ -6,6 +6,3 @@ enum RequestType: String {
   case POST
 }
 
-enum NetworkError: Error {
-  case invalidURL
-}
